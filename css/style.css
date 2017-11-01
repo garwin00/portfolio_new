@@ -1,0 +1,407 @@
+/* --- page setup --- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+@font-face {
+    font-family: 'gotham bold';
+    src: url('../fonts/Gotham-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'gotham book';
+    src: url('../fonts/Gotham-Book.ttf');
+}
+
+/* --- landing section --- */
+
+#landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/landingbckg.png');
+    background-size: cover;
+}
+
+#landing_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-family: 'gotham bold', sans-serif;
+}
+
+h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    font-family: 'gotham book', sans-serif;
+
+}
+
+h3 {
+    line-height: 33.33vh;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'gotham bold', sans-serif;
+    color: white;
+    letter-spacing: 1.5pt;
+}
+
+/* --- nav --- */
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+nav ul {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'gotham bold', sans-serif;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 .5em;
+    line-height: 1.2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    transition: all .3s ease;
+    opacity: 0.7;
+    padding-bottom: .5em;
+    border-bottom: 3px solid white;
+}
+
+
+/* --- grid --- */
+
+
+.row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.left, .right {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+#about_right {
+    height: auto;
+}
+
+.container {
+    height: 100%;
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 2.5em 0;
+}
+
+
+.container p {
+    font-size: 1em;
+    line-height: 1.6em;
+    font-family: 'gotham book', sans-serif;
+    padding-top: 2.5em;
+}
+
+.container a {
+    text-decoration: none;
+    color: #92278f;
+    font-family: 'gotham bold', sans-serif;
+}
+
+.bold {
+    font-family: 'gotham bold', sans-serif;
+}
+
+.container img {
+    display: block;
+    margin: 2.5em auto;
+}
+
+#about h1,
+#work h1,
+#contact h1 {
+    line-height: 100vh;
+}
+
+#purple {
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+}
+
+
+/* --- work section ---*/ 
+
+
+#work h1 {
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#work_item,
+#work_item2,
+#work_item3 {
+    height: 33.33%;
+    position: relative;
+}
+
+#work_item a,
+#work_item2 a,
+#work_item3 a {
+    text-decoration: none;
+}
+
+#work_item {
+    background-image: url(../img/brandinghead.jpg);
+    background-size: cover;
+}
+
+#work_item2 {
+    background-image: url(../img/timetracks.jpg);
+    background-size: cover;
+}
+
+#work_item3 {
+    background: grey;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .3s ease;
+}
+
+#work_item:hover .overlay {
+    width: 100%;
+
+}
+
+#work_item2:hover .overlay {
+    width: 100%;
+
+}
+
+#work_item3:hover .overlay {
+    width: 100%;
+}
+
+.overlay p {
+    line-height: 33.33vh;
+    font-family: 'gotham book', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+/* --- footer --- */
+
+
+footer {
+    height: 50vh;
+    max-width: 100%;
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+}
+
+.footer_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.links {
+    text-transform: uppercase;
+}
+
+.links a {
+    margin: .5em;
+    text-decoration: none;
+    font-family: 'gotham bold', sans-serif;
+    font-size: 1em;
+    color: #fff;
+}
+
+.links a:hover {
+    transition: all .3s ease;
+    opacity: 0.7;
+    padding-bottom: .5em;
+    border-bottom: 3px solid white;
+}
+
+.footer_text {
+    color: white;
+    font-size: 0.75em;
+    font-family: 'gotham bold', sans-serif;
+    max-width: 100%;
+}
+
+.icons img {
+    margin: 2em 1em;
+    opacity: 1;
+}
+
+.icons img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+    -webkit-transition: .2s all;
+    cursor: pointer;
+}
+
+
+/* --- button --- */
+
+
+button {
+    margin-top: 2.5em;
+    padding: 0;
+    background: none;
+    height: 2.5em;
+    width: 12em;
+    border: 3px #662d91 solid;
+}
+
+button a {
+    color: #662d91;
+    font-family: 'gotham bold', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 5s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+    animation: Gradient 5s ease infinite;
+    border: none;
+    transition: .3s all;
+}
+
+button:hover > a{
+    color: white;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+/* --- media queries --- */ 
+@media (max-width: 60em) {
+    #about h1,
+    #work h1,
+    #contact h1 {
+    font-size: 2.5em;
+}
+}
+
+@media (max-width: 50em) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .row {
+        display: block;
+        max-width: 100%;
+    }
+    
+    .left, .right {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    .container {
+        max-width: 90%;
+        overflow: hidden;
+    }
+
+    .icons img {
+        height: 24px;
+        width: 24px;
+    }
+    
+    .left {
+        height: 40vh;
+    }
+    
+    #about h1,
+    #work h1,
+    #contact h1 {
+    line-height: 40vh;
+    }
+    
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
