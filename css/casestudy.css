@@ -21,6 +21,12 @@
     grid-template-columns: 20% 80%;
 
 }
+
+.row_inner {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    grid-column-gap: 5%;
+}
 .header {
     height: 30vh;
     width: 100%;
@@ -60,20 +66,33 @@ h3 {
     background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 2.5em;
 }
 
 .container {
     width: 70%;
     margin: 0 auto;
-    padding-top: 3em;
+    padding-top: 5em;
+}
+
+.placeholder {
+    display: block;
+    margin: 1.25em auto 2.5em auto;
+    background-color: aqua;
+    height: 320px;
+    width: 480px;
 }
 
 .container p {
     font-family: 'gotham book', sans-serif;
-    padding: 2.5em 0 0 0;
-    line-height: 1.5em;
+    line-height: 1.6em;
+    padding-bottom: 2.5em;
 }
 
+.container img {
+    display: block;
+    margin: 1.25em auto 2.5em auto;
+}
 .navigation {
     width: 100%;
     background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
