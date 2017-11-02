@@ -311,9 +311,9 @@ button a {
 button:hover {
     background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
     background-size: 400% 400%;
-    -webkit-animation: Gradient 5s ease infinite;
-    -moz-animation: Gradient 5s ease infinite;
-    animation: Gradient 5s ease infinite;
+    -webkit-animation: Gradient 2s ease infinite;
+    -moz-animation: Gradient 2s ease infinite;
+    animation: Gradient 2s ease infinite;
     border: none;
     transition: .3s all;
 }
