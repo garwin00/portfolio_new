@@ -1,3 +1,5 @@
+/* --- page setup --- */
+
 * {
     padding: 0;
     margin: 0;
@@ -16,113 +18,177 @@
 }
 
 
-.row {
-    display: grid;
-    grid-template-columns: 20% 80%;
-
-}
-
-.row_inner {
-    display: grid;
-    grid-template-columns: 60% 35%;
-    grid-column-gap: 5%;
-}
-.header {
-    height: 30vh;
+#header {
+    height: 40vh;
     width: 100%;
-    background-image:url(../img/brandinghead.jpg);
+}
+
+.branding {
+    background-image: url(../img/brandinghead.jpg);
     background-size: cover;
+    background-position: center;
+}
+
+.timetracks {
+    background-image: url(../img/timetracks.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#header_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-delay: .3s;
 }
 
 h1 {
-    line-height: 30vh;
-    text-align: center;
+    font-size: 4.5em;
     font-family: 'gotham bold', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    font-size: 2em;
-}
-
-.left {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
 }
 
 h2 {
-    line-height: 100vh;
-    text-align: center;
-    font-family: 'gotham bold', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1em;
+    margin-top: 1em;
+    font-family: 'gotham book', sans-serif;
 }
 
-h3 {
-    font-family: 'gotham bold', sans-serif;
-    font-size: 1.25em;
-    text-transform: uppercase;
+.purple {
     background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 2.5em;
+}
+
+.blue {
+    background: linear-gradient(45deg, #0037BC 0%, #29ABE2 100%);
 }
 
 .container {
-    width: 70%;
+    height: 100%;
+    max-width: 65%;
     margin: 0 auto;
-    padding-top: 5em;
+    padding: 5em 0;
 }
 
-.placeholder {
-    display: block;
-    margin: 1.25em auto 2.5em auto;
-    background-color: aqua;
-    height: 320px;
-    width: 480px;
-}
-
-.container p {
-    font-family: 'gotham book', sans-serif;
+p {
+    font-size: 1em;
     line-height: 1.6em;
-    padding-bottom: 2.5em;
+    font-family: 'gotham book', sans-serif;
+}
+
+.white {
+    color: white;
+}
+
+.purple_text {
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blue_text {
+    background: linear-gradient(45deg, #0037BC 0%, #29ABE2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'gotham bold', sans-serif;
+    letter-spacing: 1.5pt;
+    padding-bottom: 1em;
 }
 
 .container img {
-    display: block;
-    margin: 1.25em auto 2.5em auto;
-}
-.navigation {
+    height: auto;
     width: 100%;
-    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
-    margin-top: 3em;
+    padding: 2.5em 0 2.5em 0;
+    margin: 0 auto;
 }
 
-.navigation_inner{
+.row {
     display: grid;
-    grid-template-columns: 30% 30%;
-    grid-column-gap: 40%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 100%;
 }
 
-.navleft, .navright {
-    height: 30vh;
+.grid_item {
+    height: auto;
+}
+
+#inner_nav {
+    background-color: white;
     text-align: center;
+    height: 20vh;
 }
 
-.navleft p, .navright p {
-    font-family: 'gotham bold',sans-serif;
-    color: white;
-    line-height: 30vh;
-    text-transform: uppercase;
+#inner_nav h3 {
+    line-height: 20vh;
 }
 
-.navleft a, .navright a {
+#inner_nav a {
     text-decoration: none;
 }
 
-.navleft p:hover, .navright p:hover {
+#inner_nav h3:hover {
     transition: all .3s ease;
     opacity: 0.7;
+}
+
+footer {
+    height: 50vh;
+    max-width: 100%;
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+}
+
+.footer_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.links {
+    text-transform: uppercase;
+}
+
+.links a {
+    margin: .5em;
+    text-decoration: none;
+    font-family: 'gotham bold', sans-serif;
+    font-size: 1em;
+    color: #fff;
+}
+
+.links a:hover {
+    transition: all .3s ease;
+    opacity: 0.7;
+    padding-bottom: .5em;
+    border-bottom: 3px solid white;
+}
+
+.footer_text {
+    color: white;
+    font-size: 0.75em;
+    font-family: 'gotham bold', sans-serif;
+    max-width: 100%;
+}
+
+.icons img {
+    margin: 2em 1em;
+    opacity: 1;
+}
+
+.icons img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+    -webkit-transition: .2s all;
     cursor: pointer;
 }
