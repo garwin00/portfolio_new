@@ -3,5 +3,7 @@
 https://garwin00.github.io/portfolio_new/
 
 TO DO:
-- Case Study Content (maybe look at new layout?)
-- CV
+- Tidy Case Studies
+- Pictures of TT Sketches
+- Fix CV Link
+- Add dedicated CV page
