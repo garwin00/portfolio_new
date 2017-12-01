@@ -1,232 +1,225 @@
 /* --- page setup --- */
 
 * {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    line-height: 1em;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  line-height: 1em;
 }
 
 @font-face {
-    font-family: 'gotham bold';
-    src: url('../fonts/Gotham-Bold.ttf');
+  font-family: 'gotham bold';
+  src: url('../fonts/Gotham-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'gotham book';
-    src: url('../fonts/Gotham-Book.ttf');
+  font-family: 'gotham book';
+  src: url('../fonts/Gotham-Book.ttf');
 }
-
 
 #header {
-    height: 40vh;
-    width: 100%;
+  height: 40vh;
+  width: 100%;
 }
 
 .branding {
-    background-image: url(../img/brandinghead.jpg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../img/brandinghead.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .timetracks {
-    background-image: url(../img/timetracks.jpg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../img/timetracks.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #header_content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 h1,
 h2 {
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-animation-duration: .5s;
-    -webkit-animation-delay: .3s;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .3s;
 }
 
 h1 {
-    font-size: 4.5em;
-    font-family: 'gotham bold', sans-serif;
+  font-size: 4.5em;
+  font-family: 'gotham bold', sans-serif;
 }
 
 h2 {
-    font-size: 1em;
-    margin-top: 1em;
-    font-family: 'gotham book', sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+  font-family: 'gotham book', sans-serif;
 }
 
-p {
-    font-size: 1em;
-    line-height: 1.6em;
-    font-family: 'gotham book', sans-serif;
-    padding-top: 2.5em;
+.container p {
+  font-size: 1em;
+  line-height: 1.6em;
+  font-family: 'gotham book', sans-serif;
+  padding-top: 2.5em;
 }
 
 h3 {
-    font-size: 2em;
-    text-transform: uppercase;
-    font-family: 'gotham bold', sans-serif;
-    letter-spacing: 1.5pt;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: 'gotham bold', sans-serif;
+  letter-spacing: 1.5pt;
 }
 
 .row {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
 }
 
 #left {
-    height: 100vh;
-    position: sticky;
-    top: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
+
 #right {
-    height:auto;
+  height: auto;
 }
 
 .purple {
-    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+  background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
 }
 
 .blue {
-   background: linear-gradient(45deg, #0037BC 0%, #29ABE2 100%); 
+  background: linear-gradient(45deg, #0037BC 0%, #29ABE2 100%);
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
 .purple_text {
-    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .blue_text {
-    background: linear-gradient(45deg, #0037BC 0%, #29ABE2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(45deg, #0037BC 0%, #29ABE2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
-    height: 100%;
-    max-width: 65%;
-    margin: 0 auto;
-    padding: 5em 0;
+  height: 100%;
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 3em 0;
 }
 
-.cs{
-    width: 100%;
-    height: auto;
-    margin: 0;
+.container h1 {
+  text-align: left;
 }
 
-
-#inner_nav {
-    background-color: white;
-    text-align: center;
-    height: 20vh;
+.small {
+  font-size: 0.8em;
+  color: #fff;
+  text-align: left;
 }
 
-#inner_nav h3 {
-    line-height: 20vh;
-}
-
-#inner_nav a {
-    text-decoration: none;
-}
-
-#inner_nav h3:hover {
-    transition: all .3s ease;
-    opacity: 0.7;
+.cs {
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 footer {
-    height: 50vh;
-    max-width: 100%;
-    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+  height: 50vh;
+  max-width: 100%;
+  background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
 }
 
 .footer_content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
 
 .links {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .links a {
-    margin: .5em;
-    text-decoration: none;
-    font-family: 'gotham bold', sans-serif;
-    font-size: 1em;
-    color: #fff;
+  margin: .5em;
+  text-decoration: none;
+  font-family: 'gotham bold', sans-serif;
+  font-size: 1em;
+  color: #fff;
 }
 
 .links a:hover {
-    transition: all .3s ease;
-    opacity: 0.7;
-    padding-bottom: .5em;
-    border-bottom: 3px solid white;
+  transition: all .3s ease;
+  opacity: 0.7;
+  padding-bottom: .5em;
+  border-bottom: 3px solid white;
 }
 
 .footer_text {
-    color: white;
-    font-size: 0.75em;
-    font-family: 'gotham bold', sans-serif;
-    max-width: 100%;
+  color: white;
+  font-size: 0.75em;
+  font-family: 'gotham bold', sans-serif;
+  max-width: 100%;
 }
 
 .icons img {
-    margin: 2em 1em;
-    opacity: 1;
+  margin: 2em 1em;
+  opacity: 1;
 }
 
 .icons img:hover {
-    opacity: .6;
-    transform: scale(1.1);
-    -webkit-transition: .2s all;
-    cursor: pointer;
+  opacity: .6;
+  transform: scale(1.1);
+  -webkit-transition: .2s all;
+  cursor: pointer;
 }
 
-@media (max-width: 60em) {
-    h1 {
-        font-size: 2.5em;
-    }
+@media (max-width: 50em) {
+  h1 {
+    font-size: 2.5em;
+  }
 
-    h2 {
-        font-size: .8em;
-    }
-    
-    h3 {font-size: 1.2em}
+  h2 {
+    font-size: .8em;
+  }
 
-    .row {
-        display: block;
-        max-width: 100%;
-    }
+  h3 {
+    font-size: 1.2em
+  }
 
-    #left,
-    #right {
-        width: 100%;
-        position: static;
-        height: auto;
-    }
-    .container {
-        max-width: 90%;
-        overflow: hidden;
-    }
+  .row {
+    display: block;
+    max-width: 100%;
+  }
 
-    .icons img {
-        height: 24px;
-        width: 24px;
-    }
+  #left,
+  #right {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 90%;
+    overflow: hidden;
+  }
+
+  .icons img {
+    height: 24px;
+    width: 24px;
+  }
 }

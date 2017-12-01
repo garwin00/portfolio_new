@@ -1,126 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--site is still wip, for current to do list visit github-->
-
+<!--- still very much wip --->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Garry Irwin | Frontend Designer</title>
-    <meta name="description" content="A Frontend Designer living in Belfast">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <link rel="icon" href="img/branding.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/smooth-scroll.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Garry Irwin | Frontend Designer</title>
+  <meta name="description" content="A Frontend Designer living in Belfast">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <link rel="icon" href="img/branding.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110396779-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110396779-1');
+
+  </script>
+
 </head>
 
 <body>
-    <div id="landing">
-        <div id="landing_content">
-            <h1 class="animated fadeIn">Hi, I'm Garry</h1>
-            <h2 class="animated fadeIn">frontend designer and typography enthusiast</h2>
+  <div id="top" class="landing">
+    <div class="inner_content">
+      <h1 class="animated fadeIn">Hi, I'm Garry</h1>
+      <h2 class="animated fadeIn">frontend designer and typography enthusiast</h2>
+    </div>
+    <nav class="animated fadeInUp">
+      <ul>
+        <li><a data-scroll href="#about">About</a></li>
+        <li><a data-scroll href="#work">Work</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
+        <li><a href="garry_irwin_cv.pdf" target="_blank">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+
+    <div class="row" id="about">
+      <div class="left purple">
+        <div class="inner_content">
+          <h1>About</h1>
         </div>
-        <nav class="animated fadeInUp">
-            <ul>
-                <li><a data-scroll href="#about">About</a></li>
-                <li><a data-scroll href="#work">Work</a></li>
-                <li><a data-scroll href="#contact">Contact</a></li>
-                <li><a href="garry_irwin_cv.pdf" target="_blank">CV</a></li>
-            </ul>
+        <nav>
+          <ul>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#work">Work</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
+            <li><a href="garry_irwin_cv.pdf" target="_blank">CV</a></li>
+          </ul>
         </nav>
-    </div>
-    <div class="row">
-        <div class="left" id="purple">
-            <div id="about">
-                <h1>About</h1>
-            </div>
-        </div>
-        <div id="about_right">
-            <div class="container">
+      </div>
 
-                <img src="img/headshot.png" height="100px" width="100px">
-
-                <p><span class="bold">I'm a 25 year old Frontend Designer and student from Belfast studying <a href="http://ixdbelfast.org/" target="_blank">Interaction Design</a> at Belfast School of Art.</span></p>
-                <p>I design <span class="bold">clean</span>, <span class="bold">user-focused interfaces</span> that people seem to love. I like to use <span class="bold">clean typography</span>, <span class="bold">grid systems</span> and <span class="bold">gradients</span> (as long as they're purple) and I'm passionate about all things creative and technical.</p>
-                <p>When I was a kid I discovered this awesome tool called Notepad and figured out that I could make silly websites for fun and send them to my friends to make them laugh.</p>
-                <p>After that, I was really into music. Being apparently the only guy in town with access to Photoshop meant local bands soon reached out for me to create gig posters and promotional materials. I decided to merge my love of coding websites with my new-found passion for design and it's all gone up from there.</p>
-                <p>Over the years, I've dabbled in a ton of stuff like <span class="bold">Graphic Design, Photography, Music</span> and <span class="bold">beard growth </span>but what's really stuck is my passion for Frontend design. It's just what I want to do. I've never been so sure about something in my life.</p>
-
-            </div>
+      <div id="about_long">
+        <div class="container">
+          <img src="img/headshot.jpg" height="100px" width="100px">
+          <p><span class="bold">I'm a Frontend Designer and student from Belfast studying <a href="http://ixdbelfast.org/" target="_blank" class="inline">Interaction Design</a> at Belfast School of Art.</span></p>
+          <div class="line purple"></div>
+          <p>I love to design <span class="bold">clean</span>, <span class="bold">user-focused interfaces</span> with little personal touches that are sure to delight and amuse. My toolbox includes things like <span class="bold">gradients</span> (as long as they're purple), <span class="bold">grid systems</span> and <span class="bold">clean typography</span> with a <span class="bold">solid understanding of design</span> thrown on top.
+            <p>Over the years, I've dipped my toes into pretty much everything - <span class="bold">Graphic Design</span>, <span class="bold">Photography</span>, <span class="bold">Music Production</span> - you name it, I've tried it. No matter the project, I'm able to assist in some way.</p>
+            <div class="line purple"></div>
+            <p>Nothing is ever just thrown straight onto the screen without a ton of preparation and planning. Each project starts life as a series of sketches that's continually refined and updated the reflect the constantly changing design process and needs of the individual client.</p>
         </div>
-    </div>
-    <div class="row">
-        <div class="left">
-            <div id="work">
-                <h1>Work</h1>
-            </div>
-        </div>
-        <div class="right" id="purple">
-            <div id="work_item">
-                <a href="branding.html">
-                    <h3>Personal Branding</h3>
-                    <div class="overlay">
-                        <p>Exploring my identity as a designer.</p>
-                    </div>
-                </a>
-            </div>
-            <div id="work_item2">
-                <a href="timetracks.html">
-                    <h3>Timetracks</h3>
-                    <div class="overlay">
-                        <p>Developing an idea from paper to screen.</p>
-                    </div>
-                </a>
-            </div>
-            <div id="work_item3">
-                <h3>Elements</h3>
-                <div class="overlay">
-                    <p>Coming Soon</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="left" id="purple">
-            <div id="contact">
-                <h1>Contact</h1>
-            </div>
-        </div>
-        <div class="right">
-            <div class="container">
-                <p><span class="bold">I love making cool stuff, so I'm pretty much always available for freelance work.</span></p>
-                <p>Working with me, you're guaranteed awesome, functional sites that users will love - no frameworks, no stock images, just pure bespoke content.</p>
-                <p>Got a project that you want to talk about? I want to hear about it!</p>
-                <p>Maybe you just want to chat? That's cool too.</p>
-                <button type="button"><a href="mailto:hello@garryirwin.co?subject=Let's work together!">work with me</a></button>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <footer>
-
-        <div class="footer_content">
-            <div class="links">
-                <a data-scroll href="#about">About</a>
-                <a data-scroll href="#work">Work</a>
-                <a data-scroll href="#contact">Contact</a>
-                <a href="garry_irwin_cv.pdf" target="_blank">CV</a>
-            </div>
-
-            <div class="icons">
-                <a href="https://twitter.com/garwin00_" target="_blank"><img src="img/social/twitter.png" height="32px" width="32px"></a>
-                <a href="https://instagram.com/garwin00" target="_blank"><img src="img/social/instagram.png" height="32px" width="32px"></a>
-                <a href="https://uk.pinterest.com/garwin00/" target="_blank"><img src="img/social/pinterest.png" height="32px" width="32px"></a>
-                <a href="http://garwin00.tumblr.com/" target="_blank"><img src="img/social/tumblr.png" height="32px" width="32px"></a>
-                <a href="https://github.com/garwin00" target="_blank"><img src="img/social/github.png" height="32px" width="32px"></a>
-            </div>
-            <p class="footer_text">Built with ♥ and coffee in Belfast.<br>© Garry Irwin - 2017</p>
+    <div class="row" id="work">
+      <div class="left">
+        <div class="inner_content">
+          <h1 class="purple_text">Work</h1>
         </div>
-    </footer>
+        <nav class="purple_text">
+          <ul>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#work">Work</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
+            <li><a href="garry_irwin_cv.pdf" target="_blank">CV</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <script>
-        smoothScroll.init();
-    </script>
+      <div class="right long">
+
+        <div class="work_item one">
+          <div class="inner_content">
+            <div class="inner_content">
+              <h4>Personal Branding</h4>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="inner_content">
+              <p>Exploring my identity as a designer.</p>
+              <a href="branding.html"><button class="work_btn">learn more</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="work_item two">
+          <div class="inner_content">
+            <div class="inner_content">
+              <h4>timetracks</h4>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="inner_content">
+              <p>Taking an idea from paper to screen.</p>
+              <a href="timetracks.html"><button class="work_btn">learn more</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="work_item three">
+          <div class="inner_content">
+            <a href="#">
+              <div class="inner_content">
+                <h4>Elements</h4>
+                <div class="line"></div>
+              </div>
+            </a>
+          </div>
+          <div class="overlay">
+            <div class="inner_content">
+              <p>Coming soon</p>
+              <a href="#"><button class="work_btn">not quite ready</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="contact">
+      <div class="left purple">
+        <div class="inner_content">
+          <h1>Contact</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#work">Work</a></li>
+            <li><a data-scroll href="#contact" class="current">Contact</a></li>
+            <li><a href="garry_irwin_cv.pdf" target="_blank">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <div class="container">
+          <p><span class="bold">I love making cool stuff, so I'm pretty much always available for freelance work.</span></p>
+          <p>Working with me, you're guaranteed awesome, functional sites that users will love - no frameworks, no stock images, just pure bespoke content.</p>
+          <p>Got a project that you want to talk about? I want to hear about it!</p>
+          <p>Maybe you just want to chat? That's cool too.</p>
+          <div class="line purple"></div>
+          <a href="mailto:hello@garryirwin.co" class="button"><button class="contact_btn" type="button">Let's work together!</button></a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="inner_content">
+      <div class="icons">
+        <a href="https://twitter.com/garwin00_" target="_blank"><img src="img/social/twitter.png" height="32px" width="32px"></a>
+        <a href="https://instagram.com/garwin00" target="_blank"><img src="img/social/instagram.png" height="32px" width="32px"></a>
+        <a href="https://uk.pinterest.com/garwin00/" target="_blank"><img src="img/social/pinterest.png" height="32px" width="32px"></a>
+        <a href="http://garwin00.tumblr.com/" target="_blank"><img src="img/social/tumblr.png" height="32px" width="32px"></a>
+        <a href="https://github.com/garwin00" target="_blank"><img src="img/social/github.png" height="32px" width="32px"></a>
+      </div>
+      <p class="footer_text">Built with ♥ and coffee in Belfast.<br>© Garry Irwin - 2017</p>
+    </div>
+  </footer>
+
+  <script>
+    smoothScroll.init();
+  </script>
 
 </body>
 
